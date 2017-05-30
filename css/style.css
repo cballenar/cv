@@ -1,0 +1,367 @@
+/* HTML5 ✰ Boilerplate
+ * ==|== normalize ==========================================================
+ */
+*{position:relative;z-index:0;}
+*:hover{z-index:10;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #DB0048; color: #fff; text-shadow: none; }
+::selection { background: #DB0048; color: #fff; text-shadow: none; }
+
+a { color: #8F0D37; }
+a:visited { color: #8F0D37; text-decoration:none; }
+a:hover { color: #DB0048; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #999; background:#EEE; margin: 48px 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+/* @license
+ * MyFonts Webfont Build ID 2066343, 2012-02-04T13:18:42-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Code Pro Black Lowercase by Fontfabric
+ * URL: http://www.myfonts.com/fonts/font-fabric/code-pro/black-lc/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Code Pro Bold Lowercase by Fontfabric
+ * URL: http://www.myfonts.com/fonts/font-fabric/code-pro/bold-lc/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Code Pro Light Lowercase by Fontfabric
+ * URL: http://www.myfonts.com/fonts/font-fabric/code-pro/light-lc/
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: Code Pro Lowercase by Fontfabric
+ * URL: http://www.myfonts.com/fonts/font-fabric/code-pro/lc/
+ * Licensed pageviews: unspecified
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2066343
+ * Webfonts copyright: Copyright &#x00A9; 2011 By Svetoslav Simov &#x00A9; Fontfabric, LLC. All rights reserved.
+ * 
+ * © 2012 Bitstream Inc
+*/
+@font-face {font-family: 'CodeProBlack';
+  src: url('../webfonts/1F87A7_0_0.eot');
+  src: url('../webfonts/1F87A7_0_0.eot?#iefix') format('embedded-opentype'),
+  url('../webfonts/1F87A7_0_0.woff') format('woff'),
+  url('../webfonts/1F87A7_0_0.ttf') format('truetype');
+}
+@font-face {font-family: 'CodeProBold';
+  src: url('../webfonts/1F87A7_1_0.eot');
+  src: url('../webfonts/1F87A7_1_0.eot?#iefix') format('embedded-opentype'),
+  url('../webfonts/1F87A7_1_0.woff') format('woff'),
+  url('../webfonts/1F87A7_1_0.ttf') format('truetype');
+}
+@font-face {font-family: 'CodeProLight';
+  src: url('../webfonts/1F87A7_2_0.eot');
+  src: url('../webfonts/1F87A7_2_0.eot?#iefix') format('embedded-opentype'),
+  url('../webfonts/1F87A7_2_0.woff') format('woff'),
+  url('webfonts/1F87A7_2_0.ttf') format('truetype');
+}
+@font-face {font-family: 'CodePro';
+  src: url('../webfonts/1F87A7_3_0.eot');
+  src: url('../webfonts/1F87A7_3_0.eot?#iefix') format('embedded-opentype'),
+  url('../webfonts/1F87A7_3_0.woff') format('woff'),
+  url('../webfonts/1F87A7_3_0.ttf') format('truetype');
+}
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+body{
+  font-family: 'CodePro', sans-serif;
+  margin:0 auto 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+  background: #F6F6F6;
+}
+
+h1{margin:0;padding:24px 0 0;}
+h1,h2,h3,h4,h5,h6{font-family:'CodePro';text-transform:uppercase;}
+h2,h3,h4,h5,h6,p,ul,ol,dt,dd{margin:12px 0 6px;}
+p,ul,ol,dt,dd{font-family:'CodePro';font-size:14px;line-height:24px;}
+p{text-indent:24px}
+
+
+h1{font-size:60px;color:#222;margin-bottom:12px;}
+h2{font-size:36px;color:#8F0D37}
+h3{font-size:27px;color:#333;margin-bottom: 3px;margin-top: 36px;}
+h4{font-size:21px;color:#333;}
+h5{font-size:18px;color:#333;margin-bottom:6px}
+h6{font-size:18px;color:#333;}
+
+h5 a:link,
+h5 a:visited { color:#333; text-decoration:none; }
+h5 a:hover { color:#8F0D37; text-decoration:underline; }
+h5 a:active { color:#CCC; text-decoration:none; }
+
+.col25,.col33,.col50,.col66,.col75,.col100{width:auto;float:none;} 
+
+.pad{padding:0 24px 0}
+.col50 .pad{padding:0 24px 0 48px}
+.midCol{width:75%;margin:0 auto;}
+
+  html{overflow-x:hidden;}
+    #main{
+      border-left:24px solid #222;
+      padding-bottom:48px;
+    }
+    header{z-index:10}
+    .ratingWrapper{
+      width:100%;
+      padding:2px;
+      margin:12px 6px;
+      border:1px solid #CCC;
+    }
+      .ratingFill{
+        height:24px;
+        background:#222;
+        color:#EEE;
+        font-size:13px;
+        line-height:24px;
+        margin:0;
+      }
+
+    .rL .ratingFill{height:36px}
+    .r5 .ratingFill{width:95%;background:#4d9e53}
+    .r4 .ratingFill{width:80%;background:#78b15c}
+    .r3 .ratingFill{width:65%;background: #D8C876;}
+    .r2 .ratingFill{width:50%;background:#f5e978}
+  
+  .ratingWrapper:hover{border:1px solid #9d9d9d;background:#FCFCFC;}
+    .r5:hover .ratingFill{background:#379e3f}
+    .r4:hover .ratingFill{background:#66b141}
+    .r3:hover .ratingFill{background: #E0CC63;}
+    .r2:hover .ratingFill{background:#f5e656}
+
+
+.r2:hover:after,
+.r3:hover:after,
+.r4:hover:after,
+.r5:hover:after {
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  left: 101%;
+  top: 0;
+  white-space: nowrap;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+}
+.r2:hover:after{content: "Not fluent but I get it"}
+.r3:hover:after{content: "Decent"}
+.r4:hover:after{content: "Good!"}
+.r5:hover:after{content: "Excellent!"}
+
+      .secTitle{
+        width:200%;
+        margin-top:24px;
+        padding:3px 0 3px 24px;
+        background:#8f0d37;
+      }
+        .secTitle h2{
+          color:#FFF;
+          text-shadow:1px 1px 1px #333;
+          margin-bottom: 12px;
+          }
+
+  .iContact{margin:12px 24px;}
+    .iPrint,.iPhone,.iEmail{display:block;float:left;width:180px;height:60px;margin:6px;text-indent:66px;line-height:60px;white-space:nowrap;}
+    .iPrint:hover,.iPhone:hover,.iEmail:hover{cursor:pointer}
+
+    .iPrint{background:url(../img/icons.png) 0 0 no-repeat;}
+      .iPrint:hover{background:url(../img/icons.png) 0 -61px no-repeat;}
+    .iPhone{background:url(../img/icons.png) 0 -122px no-repeat;}
+      .iPhone:hover{background:url(../img/icons.png) 0 -183px no-repeat;}
+    .iEmail{background:url(../img/icons.png) 0 -244px no-repeat;}
+      .iEmail:hover{background:url(../img/icons.png) 0 -305px no-repeat;}
+  
+  .ui-dialog{position:absolute;background:#EEE;-webkit-border-radius: 12px;-webkit-box-shadow:#333 2px 4px 6px;}
+  .ui-dialog-titlebar{color:#EEE;background: #8F0D37;padding:6px 24px 12px;font-size: 14px;line-height: 24px;}
+  .ui-dialog-titlebar-close:link,
+  .ui-dialog-titlebar-close:visited{color:#CCC;float:right;}
+    .ui-dialog-titlebar-close:hover{color:#FFF;}
+  .ui-widget-overlay{position:fixed;top:0;left:0;background:rgba(0,0,0,.55);}
+  .ui-dialog-content{padding:24px}
+
+  input[type=name],
+  input[type=email],
+  input[type=tel],
+  input[type=url],
+  textarea{
+    width: 218px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 3px 6px;
+    line-height: 24px;
+    color: #666;
+    margin: 6px 0;
+  }
+  input[type=submit]{
+    background: #8F0D37;
+    border: 1px solid #750B2C;
+    color: white;
+    padding: 6px 12px;
+    margin:6px 0;
+    border-radius: 3px;
+    float: right;
+    font-weight:bold;
+  }
+.mobileHidden{display:none}
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1;z-index:-999; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 480px and over go here */
+h1{font-size:96px;color:#222;margin-bottom:12px;}
+h2{font-size:60px;color:#8F0D37}
+
+.col100,.col75,.col66,.col33,.col25{display:block;float:left;position:relative}
+.col100{width:100%}
+.col75{width:75.00%}
+.col66{width:66.66%}
+.col50{width:auto;float:none;}
+.col33{width:33.33%}
+.col25{width:25.00%}
+
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Style adjustments for viewports 768px and over go here */
+body{width:90%;min-width:768px;max-width:1100px;}
+
+.col100,.col75,.col66,.col50,.col33,.col25{display:block;float:left;position:relative}
+.col100{width:100%}
+.col75{width:75.00%}
+.col66{width:66.66%}
+.col50{width:50.00%}
+.col33{width:33.33%}
+.col25{width:25.00%}
+
+.mobileHidden{display:block;}
+.iContact{position:fixed;top:48px;right:0;margin:0;z-index:100;}
+  .iContact:hover{width:192px;}
+  .iPrint,.iPhone,.iEmail{width:60px;height:60px;margin:6px;display:block;float:none;text-indent:66px;line-height:60px;white-space:nowrap;}
+  .iPrint:hover,.iPhone:hover,.iEmail:hover{cursor:pointer;width:180px}
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+@media print {
+  * { font-family:sans-serif;background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  hgroup{margin-bottom:0}
+  h1{font-family:'arial black';font-weight:bold;font-size:60pt;}
+  h2{font-weight:bold;font-size:36pt;}
+  h1,h2,h3,h4,h5,h6{margin-bottom:0;}
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
